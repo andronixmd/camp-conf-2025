@@ -33,22 +33,25 @@
       body {
         height: 100%;
         font-family: Arial, sans-serif;
-        padding: 20px;
       }
       body {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: url("images/background.png") no-repeat center center fixed;
-        background-size: cover;
+        background: #90E0EF;
       }
       .container {
         position: relative;
         text-align: center;
         width: 100%;
+        height: 100%;
         background: rgba(255, 255, 255, 0.8);
         border-radius: 15px;
+        display: flex;
+        flex-direction: column;
         padding: 20px;
+        align-items: center;
+        justify-content: center;
       }
       .btn {
         display: inline-block;
@@ -65,27 +68,24 @@
         max-width: 500px; /* Set a maximum width for wider screens */
       }
       .btn-1 {
-        background-color: #4caf50; /* Friendly green */
-      }
-      .btn-1:hover {
-        background-color: #45a049;
-      }
-      .btn-1:active {
-        background-color: #39843c;
+        background-color: #00B4D8;
       }
       .btn-2 {
-        background-color: #ff9800; /* Friendly orange */
+        background-color: #0096C7;
       }
-      .btn-2:hover {
-        background-color: #fb8c00;
-      }
-      .btn-2:active {
-        background-color: #f57c00;
+      .bg-image {
+        width: 100%;
+        object-fit: cover;
+        align-self: flex-start;
+        position: absolute;
+        top: 0;
+        left: 0;
       }
     </style>
   </head>
   <body>
     <div class="container">
+      <img src="public/bg.jpg" alt="" class="bg-image" />
       <a
         href="https://forms.gle/2GQFXx7hu8JkbW5b9"
         class="btn btn-1"
